@@ -12,10 +12,7 @@ function errorHandler(error){
     alert("error")
 }
 
-
-
-function clickHandler(){
-    
+function getJokes(){
     fetch(apiURL)
     .then(response => response.json())
     .then(json => {
@@ -28,7 +25,7 @@ function clickHandler(){
             outputDiv.innerText= outputText;
             outputDiv2.innerText=json.delivery;
         }
-        console.log(json.type);
+        console.log("joke type: ",json.type);
         
     })
     .catch(errorHandler);
@@ -36,9 +33,12 @@ function clickHandler(){
 
 
 
+function clickHandler(){
+    
+    getJokes();
+}
 
 
-
-
+getJokes();
 
 refreshButton.addEventListener("click",clickHandler)

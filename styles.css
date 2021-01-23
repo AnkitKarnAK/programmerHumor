@@ -1,24 +1,70 @@
 @import url('https://fonts.googleapis.com/css2?family=Potta+One&display=swap');
-:root{
-    --primary-color: black;
-}
 
 
 body{
     font-family: 'Potta One', cursive;
     margin: 0px;
+    
+    text-align: center;
+    
+    /* background: linear-gradient(to bottom right, #5b54f8, #6553f7, #6f53f6, #7752f5, #7f52f4, #8851f4, #914ff5, #994ef5, #a54af7, #b045f8, #bc3ff9, #c738f9); */
+    
+    background: linear-gradient(to bottom right, #00ccff 0%, #3366ff 100%);
+    background-attachment: fixed;
+
+    
 }
+
+
+
+nav {
+    
+    text-align: center;
+    padding-top: 2rem;
+}
+
+
+
+main {
+    margin: auto;
+    padding: 2rem;
+    padding-top: 0.5rem;
+    
+    
+}
+
+.container-center {
+    max-width: 700px;
+    margin: auto;
+}
+
+.main-class{
+    
+    color: cyan;
+    font-size: large;
+    border: solid cyan;
+    padding: 0.5rem;
+
+
+}
+
 
 button{
     color: var(--primary-color);
-    background-color:coral;
+    background-color:#3366ff;
+    border: cyan solid;
 
-    border-radius: 2px;
+    
+    margin: 1rem;
+    padding: 1rem 1.5rem;
+    font-size: large;
     cursor: pointer;
-    height: 32px;
+    position:static;
     transition: all 0.2s ease-in-out;
 
 }
 button:hover {
     transform: scale(1.2);
+    border: cyan solid;
 }
+
