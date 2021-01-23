@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Potta+One&display=swap');
+:root{
+    --primary-color: black;
+}
+
+
+body{
+    font-family: 'Potta One', cursive;
+    margin: 0px;
+}
+
+button{
+    color: var(--primary-color);
+    background-color:coral;
+
+    border-radius: 2px;
+    cursor: pointer;
+    height: 32px;
+    transition: all 0.2s ease-in-out;
+
+}
+button:hover {
+    transform: scale(1.2);
+}
