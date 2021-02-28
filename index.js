@@ -55,5 +55,5 @@ const getJokes = async () => {
 
 
 
-
+getJokes();
 refreshButton.addEventListener("click", getJokes);
