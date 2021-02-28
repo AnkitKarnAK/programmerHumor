@@ -44,6 +44,7 @@ main {
     font-size: large;
     border: solid cyan;
     padding: 0.5rem;
+    box-shadow: 0 0 20px rgb(148, 150, 150);
 
 
 }
@@ -67,4 +68,8 @@ button {
 button:hover {
     transform: scale(1.2);
     border: cyan solid;
+}
+
+button:focus{
+    outline: none;
 }
